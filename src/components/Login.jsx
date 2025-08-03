@@ -19,7 +19,7 @@ function Login() {
                 const userData = await authService.getCurrentUser()
                 if(userData) dispatch(authlogin(userData))
                 navigate("/")
-                // window.location.href = '/';
+                window.location.href = '/';
             }
         } catch (error) {
             setError(error.message)
@@ -91,3 +91,4 @@ function Login() {
 }
 
 export default Login
+
