@@ -54,10 +54,11 @@ export class AuthService {
             console.log("error in logout", error);
 
         }
-        // window.location.href = '/';
+        window.location.href = '/';
     }
 }
 
 const authService = new AuthService();
+
 
 export default authService
